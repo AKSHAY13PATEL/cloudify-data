@@ -6,6 +6,8 @@
   --color-body: #4a4e69;
 }
 
+/* Topography */
+
 html {
   font-size: 62.5%;
 }
@@ -53,5 +55,30 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* Links */
+
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin-left 0.5s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.8rem;
   }
 }
