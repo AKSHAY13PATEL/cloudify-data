@@ -1,9 +1,15 @@
 :root {
-  --color-primary: #219ebc;
-  --color-secondary: #8ecae6;
-  --color-accent: #fb8500;
-  --color-headings: #22223b;
+  --color-primary: #00b4d8;
+  --color-secondary: #90e0ef;
+  --color-accent: #fb5607;
+  --color-headings: #03045e;
   --color-body: #4a4e69;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 /* Topography */
@@ -17,6 +23,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
+  margin: 10px; /* Temporary margin*/
 }
 
 h1,
@@ -163,4 +170,81 @@ p {
   height: 60px;
   justify-content: center;
   width: 60px;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #02a4c4;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background-color: #6ed7eb;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background-color: #c94506;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  border: 2px solid var(--color-headings);
+  background-color: #fff;
+}
+
+.btn--outline:hover {
+  color: #fff;
+  background-color: var(--color-headings);
+}
+
+.btn--search {
+  background-color: var(--color-accent);
+  width: fit-content;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+.btn--search svg.icon {
+  fill: #fff;
+  color: #fff;
+  height: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
