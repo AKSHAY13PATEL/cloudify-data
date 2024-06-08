@@ -139,3 +139,28 @@ p {
   margin-bottom: 1rem;
   padding-left: 0.5rem;
 }
+
+/* Icons */
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-secondary {
+  fill: var(--color-secondary);
+}
+
+.icon-container {
+  align-items: center;
+  background-color: #d9edff;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 60px;
+  justify-content: center;
+  width: 60px;
+}
