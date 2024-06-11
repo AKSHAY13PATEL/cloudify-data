@@ -166,7 +166,7 @@ p {
   fill: var(--color-primary);
 }
 
-.icon-secondary {
+.icon--secondary {
   fill: var(--color-secondary);
 }
 
