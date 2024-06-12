@@ -318,7 +318,7 @@ p {
 
 .card {
   border-radius: 10px;
-  box-shadow: 0 0 50px 10px #ddd;
+  box-shadow: 0 0 30px 10px #ddd;
   overflow: hidden;
 }
 
@@ -337,7 +337,20 @@ p {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #019ab9;
+}
+
+.card--secondary .badge--secondary {
+  background: #68d8ec;
+}
+
 /* Plans */
+
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -378,6 +391,18 @@ p {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -744,4 +769,15 @@ p {
   .block-domain__prices {
     grid-template-columns: repeat(6, 1fr);
   }
+}
+
+/* Plan block */
+
+.block-plan .grid {
+  gap: 7rem 4rem;
+}
+
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
