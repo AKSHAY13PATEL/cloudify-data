@@ -158,9 +158,9 @@ p {
   height: 30px;
 }
 
-.icon-small {
-  width: 30px;
-  height: 30px;
+.icon--small {
+  width: 20px;
+  height: 20px;
 }
 
 .icon--primary {
