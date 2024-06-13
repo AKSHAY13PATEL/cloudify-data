@@ -26,7 +26,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
-  margin: 10px; /* Temporary margin*/
+  /* margin: 10px; Temporary margin */
 }
 
 h1,
@@ -192,7 +192,7 @@ p {
 /* Buttons */
 
 .btn {
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   border: 0;
   border-radius: var(--border-radius);
   text-transform: uppercase;
@@ -302,6 +302,10 @@ p {
 .input-group .input {
   flex-grow: 1;
   border: 0px;
+  width: 0;
+  /* setting width to 0, so that 
+    flex-grow will automatically grow  
+    shrink input field */
 }
 
 .input-group .btn {
@@ -310,7 +314,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   .input {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -602,6 +606,10 @@ p {
   align-self: center;
 }
 
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout__content {
     text-align: left;
@@ -766,7 +774,7 @@ p {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 700;
@@ -852,6 +860,10 @@ p {
 
 .footer .grid {
   gap: 4rem;
+}
+
+.footer__sections {
+  margin-top: 5rem;
 }
 
 .footer__section {
