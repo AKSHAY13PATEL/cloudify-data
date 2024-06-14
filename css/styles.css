@@ -901,6 +901,11 @@ p {
   margin: 0;
 }
 
+.footer__brand img {
+  width: 15vw;
+  min-width: 130px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
