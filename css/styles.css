@@ -713,6 +713,11 @@ p {
   opacity: 1;
 }
 
+.nav__logo {
+  width: 15vw;
+  min-width: 130px;
+}
+
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
